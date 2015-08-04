@@ -1,0 +1,144 @@
+---
+---
+html, body {
+}
+
+body {
+    /*color: #EFE7DA;*/ /* Off-white */
+    color: white;
+}
+
+.background {
+    background: url("../images/WoodPlanksBare0013_2_S.jpg") repeat;
+    background-size: 640px 640px;
+    background-attachment: fixed;
+}
+
+.title {
+    font-family: 'Cabin Sketch', cursive;
+    text-transform: uppercase;
+    font-size: 6vw;
+}
+
+.runner {
+    /*width: 1000px;*/
+    margin: 0 auto;
+    background: url("../images/FabricPlain0055_4_S.jpg") repeat;
+    background-size: 300px 300px;
+    display: table;
+    box-shadow: 0px 0px 100px #000;
+}
+
+.left-border, .content, .right-border {
+    display: table-cell;
+    /*height: 100%;*/
+}
+
+.left-border, .right-border {
+    /*background: url("../images/12968-NOP3YQ.svg") repeat;*/
+    background: url("../images/12968-NOP3YQ.png") repeat;
+    background-size: 300px 800px;
+    background-position: 0px 0px;
+    width: 150px;
+}
+.right-border {
+    background-position: -150px 0px;
+}
+@media (max-width: 700px) {
+    .left-border, .right-border {
+        width: 75px;
+        background-size: 150px 400px;
+    }
+    .right-border {
+        background-position: -75px 0px;
+    }
+}
+
+
+.content {
+    width: 50vw;
+    -webkit-animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+h1 {
+    padding-bottom: 100px;
+    text-align: center;
+    font-size: 3vw;
+}
+
+footer {
+    text-align: center;
+}
+
+/* Fonts */
+body {
+    font-family: 'Cabin', sans-serif;
+}
+.cursive-font {
+    font-family: 'Great Vibes', cursive;
+    /*font-family: 'Cookie', cursive;*/
+    /*font-family: 'Rouge Script', cursive;*/
+    /*font-family: 'Monsieur La Doulaise', cursive; /* Can't even read */
+}
+.block-font {
+    /*font-family: 'Smokum', cursive;*/
+    font-family: 'Rye', cursive;
+    text-transform: uppercase;
+}
+.outline-font {
+    /*font-family: 'Vast Shadow', cursive;*/
+    /*font-family: 'Londrina Outline', cursive;*/
+    /*font-family: 'Fredericka the Great', cursive;*/
+    /*font-family: 'Kranky', cursive;*/
+    font-family: 'Ribeye Marrow', cursive;
+    /*font-weight: bold;*/
+}
+.sketch-font {
+    /*font-family: 'Fredericka the Great', cursive;*/
+    font-family: 'Cabin Sketch', cursive;
+    /*font-weight: bold;*/
+}
+.handwriting-font {
+    /*font-family: 'Cedarville Cursive', cursive;*/
+    font-family: 'Pacifico', cursive;
+}
+.fun-font {
+    font-family: 'Life Savers', cursive;
+}
+.dot-font {
+    font-family: 'Codystar', cursive;
+    font-weight: bold;
+}
+.funky-font {
+    font-family: 'Ewert', cursive;
+}
+.thin-serif-font {
+    font-family: 'Josefin Slab', serif;
+    /*font-variant: small-caps;*/
+    text-transform: uppercase;
+}
+
+/* END Fonts*/
+
+/* Navbar */
+.navbar {
+    /*width: 100%;*/
+    padding-bottom: 100px;
+}
+.navbar-item {
+    text-align: center;
+}
+.navbar-item a {
+    color: inherit;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    border: 1px dashed white;
+    border-radius: 15px;
+}
+/* END Navbar */
