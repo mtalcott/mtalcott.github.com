@@ -133,12 +133,14 @@ body {
         height: 76px;
         width: 76px;
         border-radius: 50%;
+        
+        color: #6b5439;
         transition: all 0.4s ease;
-        // font-weight: bold;
+        background-color:rgba(255,255,255,0.8);
     }
 
     &:hover .navbar-item-inner {
-        background-color:rgba(255,255,255,0.25);
+        background-color:rgba(255,255,255,1);
         transition: all 0.4s ease;
     }
 
@@ -148,9 +150,10 @@ body {
     // }
 
     &.active .navbar-item-inner {
-        color: #6b5439;
+        color: white;
+        font-weight: bold;
         transition: all 0.4s ease;
-        background-color:rgba(255,255,255,1);
+        background-color:rgba(255,255,255,0);
     }
 }
 /* END Navbar */
