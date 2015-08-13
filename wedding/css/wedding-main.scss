@@ -6,37 +6,31 @@ html, body {
 body {
     /*color: #EFE7DA;*/ /* Off-white */
     color: white;
-    // perspective: 1000px;
-}
+    font-size: 16px;
 
-.background {
     background: url("../images/WoodPlanksBare0013_2_S.jpg") repeat;
     background-size: 640px 640px;
     background-attachment: fixed;
-    // transform: translateZ(-1000px) scale(2);
-    // z-index: 1;
-}
-
-.title {
-    font-family: 'Cabin Sketch', cursive;
-    text-transform: uppercase;
-    font-size: 6vw;
 }
 
 .runner {
-    /*width: 1000px;*/
     margin: 0 auto;
     background: url("../images/FabricPlain0055_4_S.jpg") repeat;
     background-size: 300px 300px;
     display: table;
     box-shadow: 0px 0px 100px #000;
-    // transform: translateZ(-1001px);
-    // z-index: 2;
+    width: 90%;
+    min-width: 600px;
+}
+
+.title {
+    font-family: 'Fredericka the Great', cursive;
+    // text-transform: uppercase;
+    font-size: 80px;
 }
 
 .left-border, .content, .right-border {
     display: table-cell;
-    /*height: 100%;*/
 }
 
 .left-border, .right-border {
@@ -49,7 +43,10 @@ body {
 .right-border {
     background-position: -150px 0px;
 }
-@media (max-width: 700px) {
+@media (max-width: 850px) {
+    .runner {
+        width: 90%;
+    }
     .left-border, .right-border {
         width: 75px;
         background-size: 150px 400px;
@@ -61,7 +58,6 @@ body {
 
 
 .content {
-    width: 50vw;
     -webkit-animation: fadein 2s;
 }
 
@@ -71,9 +67,9 @@ body {
 }
 
 h1 {
-    padding-bottom: 100px;
+    padding-bottom: 40px;
     text-align: center;
-    font-size: 3vw;
+    font-size: 40px;
 }
 
 footer {
@@ -82,45 +78,26 @@ footer {
 
 /* Fonts */
 body {
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Sanchez', serif;
+}
+.serif-font {
+    font-family: 'Old Standard TT', serif;
 }
 .cursive-font {
     font-family: 'Great Vibes', cursive;
-    /*font-family: 'Cookie', cursive;*/
-    /*font-family: 'Rouge Script', cursive;*/
-    /*font-family: 'Monsieur La Doulaise', cursive; /* Can't even read */
 }
 .block-font {
-    /*font-family: 'Smokum', cursive;*/
-    font-family: 'Rye', cursive;
+    font-family: 'Sancreek', cursive;
     text-transform: uppercase;
 }
-.outline-font {
-    /*font-family: 'Vast Shadow', cursive;*/
-    /*font-family: 'Londrina Outline', cursive;*/
-    /*font-family: 'Fredericka the Great', cursive;*/
-    /*font-family: 'Kranky', cursive;*/
-    font-family: 'Ribeye Marrow', cursive;
-    /*font-weight: bold;*/
-}
 .sketch-font {
-    /*font-family: 'Fredericka the Great', cursive;*/
-    font-family: 'Cabin Sketch', cursive;
-    /*font-weight: bold;*/
+    font-family: 'Fredericka the Great', cursive;
 }
 .handwriting-font {
-    /*font-family: 'Cedarville Cursive', cursive;*/
-    font-family: 'Pacifico', cursive;
+    font-family: 'Cedarville Cursive', cursive;
 }
 .fun-font {
     font-family: 'Life Savers', cursive;
-}
-.dot-font {
-    font-family: 'Codystar', cursive;
-    font-weight: bold;
-}
-.funky-font {
-    font-family: 'Ewert', cursive;
 }
 .thin-serif-font {
     font-family: 'Josefin Slab', serif;
@@ -132,18 +109,48 @@ body {
 
 /* Navbar */
 .navbar {
-    /*width: 100%;*/
-    padding-bottom: 100px;
+    width: 100%;
+    padding-bottom: 40px;
 }
 .navbar-item {
     text-align: center;
+    width: 25%;
+    float: left;
 }
 .navbar-item a {
     color: inherit;
     text-decoration: none;
-    padding: 15px;
     display: inline-block;
-    border: 1px dashed white;
-    border-radius: 15px;
+    background: url("../images/FLORAL3.png") no-repeat;
+    background-size: 116px 150px;
+    height: 150px;
+    width: 116px;
+
+    .navbar-item-inner {
+        margin: 0 auto;
+        margin-top: 21px;
+        padding-top: 24px;
+        height: 76px;
+        width: 76px;
+        border-radius: 50%;
+        transition: all 0.4s ease;
+        // font-weight: bold;
+    }
+
+    &:hover .navbar-item-inner {
+        background-color:rgba(255,255,255,0.25);
+        transition: all 0.4s ease;
+    }
+
+    // &:active .navbar-item-inner {
+    //     background-color:rgba(255,255,255,0.8);
+    //     transition: all 0.2s ease;
+    // }
+
+    &.active .navbar-item-inner {
+        color: #6b5439;
+        transition: all 0.4s ease;
+        background-color:rgba(255,255,255,1);
+    }
 }
 /* END Navbar */
