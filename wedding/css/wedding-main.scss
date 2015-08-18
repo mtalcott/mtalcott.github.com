@@ -166,3 +166,12 @@ body {
     }
 }
 /* END Navbar */
+
+.fancy-hr {
+    background: url("../images/fave.png") no-repeat;
+    width: 100%;
+    background-size: contain;
+    height: 43px;
+    background-position: 50% 0;
+    margin-bottom: $standard_spacing;
+}
