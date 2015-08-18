@@ -1,44 +1,11 @@
-<!-- <ul class="nav navbar-nav">
-    <li>
-        <a class="page-scroll" href="#about">About</a>
-    </li>
-    <li>
-        <a class="page-scroll" href="#services">Services</a>
-    </li>
-    <li>
-        <a class="page-scroll" href="#contact">Contact</a>
-    </li>
-</ul> -->
 <div class="navbar">
-    <div class="navbar-item">
-        <a href="#story" class="active">
-            <div class="navbar-item-inner">
-                Story
-            </div>
-        </a>
-    </div>
-    <div class="navbar-item">
-        <a href="#wedding">
-            <div class="navbar-item-inner">
-                Wedding
-            </div>
-        </a>
-        
-    </div>
-    <div class="navbar-item">
-        <a href="#registry">
-            <div class="navbar-item-inner">
-                Registry
-            </div>
-        </a>
-        
-    </div>
-    <div class="navbar-item">
-        <a href="#rsvp">
-            <div class="navbar-item-inner">
-                RSVP
-            </div>
-        </a>
-        
-    </div>
+    {% for page in site.data.pages %}
+        <div class="navbar-item">
+            <a href="#{{page.name}}" {% if page.active %}class="active"{% endif %}>
+                <div class="navbar-item-inner">
+                   {{page.pretty_name}}
+                </div>
+            </a>
+        </div>
+    {% endfor %}
 </div>

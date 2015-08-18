@@ -1,0 +1,12 @@
+- name: story
+  pretty_name: Story
+  active: true
+
+- name: wedding
+  pretty_name: Wedding
+
+- name: registry
+  pretty_name: Registry
+
+- name: rsvp
+  pretty_name: RSVP

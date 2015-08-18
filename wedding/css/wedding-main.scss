@@ -67,12 +67,7 @@ body {
 
 
 .content {
-    -webkit-animation: fadein 2s;
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    
 }
 
 h1 {
@@ -175,3 +170,18 @@ body {
     background-position: 50% 0;
     margin-bottom: $standard_spacing;
 }
+
+/* Content sections */
+.wedding-content {
+    // visibility: hidden;
+    display: none;
+    // opacity: 0;
+    // height: 0px;
+}
+.wedding-content.active {
+    // visibility: visible;
+    display: block;
+    // opacity: 1;
+    // height: inherit;
+}
+/* END Content sections */
