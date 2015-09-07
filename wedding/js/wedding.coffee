@@ -10,5 +10,6 @@ $(->
 		pageName = el.attr('href').replace(/#/, '')
 		$(".wedding-content.active").removeClass('active')
 		$(".wedding-content.#{pageName}").addClass('active')
+		window.location = pageName
 	)
 )
