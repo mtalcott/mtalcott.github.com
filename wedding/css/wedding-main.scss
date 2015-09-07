@@ -22,12 +22,14 @@ body {
     background-size: 640px 640px;
     height: 100%;
     width: 100%;
+    // z-index: 0;
 }
 
 .runner {
     margin: 0 auto;
-    background: url("../images/FabricPlain0055_4_S.jpg") repeat;
-    background-size: 200px 200px;
+    // background: url("../images/FabricPlain0055_4_S.jpg") repeat;
+    // background-size: 200px 200px;
+    background-color: #87663C;
     display: table;
     box-shadow: 0px 0px 100px #000;
     width: 90%;
@@ -216,3 +218,19 @@ body {
 }
 
 /* END Content sections */
+
+/* Parallax */
+
+.parallax-window {
+  min-height: 200px;
+  border-radius: 1px;
+  box-shadow: 0px 0px 0px 4px rgba(0,0,0,0.3);
+  margin: 0 20px;
+  .parallax-foreground {
+    position: relative;
+    padding-top: 52px;
+    z-index: 2;
+  }
+}
+
+/* END Parallax */
