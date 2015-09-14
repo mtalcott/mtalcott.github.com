@@ -95,12 +95,28 @@ body {
     }
 }
 
+a {
+  color: white;
+  font-weight: bold;
+  // text-decoration: underline;
+  &:hover {
+    color: white;
+  }
+  &:visited {
+    color: white;
+  }
+}
 h1 {
-    // margin-bottom: $standard_spacing;
     text-align: center;
     font-size: 50px;
     margin-bottom: $standard_spacing;
     font-family: 'Great Vibes', cursive;
+}
+h2 {
+  text-align: center;
+  margin-bottom: $standard_spacing;
+  font-size: 40px;
+  font-family: 'Josefin Slab', serif;
 }
 
 footer {
@@ -126,6 +142,7 @@ body {
 }
 .handwriting-font {
     font-family: 'Cedarville Cursive', cursive;
+    font-size: 125%;
 }
 .fun-font {
     font-family: 'Life Savers', cursive;
