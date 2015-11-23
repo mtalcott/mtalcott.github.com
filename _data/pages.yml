@@ -6,14 +6,19 @@
 - name: details
   url: '/wedding/details'
   file_path: '/wedding/details/index.html'
-  pretty_name: Deets
+  pretty_name: Wedding
+
+- name: seattle
+  url: '/wedding/seattle'
+  file_path: '/wedding/seattle/index.html'
+  pretty_name: Seattle
 
 - name: registry
   url: '/wedding/registry'
   file_path: '/wedding/registry/index.html'
   pretty_name: Registry
 
-- name: rsvp
-  url: '/wedding/rsvp'
-  file_path: '/wedding/rsvp/index.html'
-  pretty_name: RSVP
+# - name: rsvp
+#   url: '/wedding/rsvp'
+#   file_path: '/wedding/rsvp/index.html'
+#   pretty_name: RSVP
