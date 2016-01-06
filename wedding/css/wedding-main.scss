@@ -29,7 +29,7 @@ body {
     margin: 0 auto;
     // background: url("../images/FabricPlain0055_4_S.jpg") repeat;
     // background-size: 200px 200px;
-    background-color: #87663C;
+    background-color: #C1A785;
     display: table;
     box-shadow: 0px 0px 100px #000;
     width: 90%;
@@ -96,14 +96,14 @@ body {
 }
 
 a {
-  color: white;
-  font-weight: bold;
+  color: #6b5439;
+  // font-weight: bold;
   // text-decoration: underline;
   &:hover {
-    color: white;
+    color: #6b5439;
   }
   &:visited {
-    color: white;
+    color: #6b5439;
   }
 }
 h1 {
@@ -168,7 +168,7 @@ body {
 }
 .navbar-item a {
     color: inherit;
-    font-size: 16px;
+    font-size: 15px;
     text-decoration: none;
     display: inline-block;
     background: url("../images/FLORAL3.png") no-repeat;
@@ -179,7 +179,7 @@ body {
     .navbar-item-inner {
         margin: 0 auto;
         margin-top: 21px;
-        padding-top: 24px;
+        padding-top: 25px;
         height: 76px;
         width: 76px;
         border-radius: 50%;
@@ -261,6 +261,29 @@ body {
 
 ul, ol {
   margin-left: 40px;
+}
+
+.more_space {
+  height: 200px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.special-bottom-margin {
+    margin-bottom: 20px;
+}
+
+div.registry-logo {
+    text-align: center;
+    margin-bottom: 100px;
+    a {
+        margin: 0 auto;
+    }
+    img {
+        width: 400px;
+    }
 }
 
 /* END Individual page content */

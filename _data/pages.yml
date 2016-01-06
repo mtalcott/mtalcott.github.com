@@ -11,7 +11,7 @@
 - name: seattle
   url: '/wedding/seattle'
   file_path: '/wedding/seattle/index.html'
-  pretty_name: Seattle
+  pretty_name: Activities
 
 - name: registry
   url: '/wedding/registry'
