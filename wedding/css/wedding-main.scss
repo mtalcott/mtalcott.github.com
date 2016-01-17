@@ -291,18 +291,20 @@ div.registry-logo {
 }
 
 a.rsvp-button {
-    display: inline-block;
-    padding: 6px 12px;
-    text-align: center;
-    white-space: nowrap;
-    border: 3px solid white;
-    border-radius: 3px;
-    color: white;
     width: 400px;
+}
+
+.btn-wedding {
+    &, &:visited {
+        color: white;
+    }
+    background-color: transparent;
+    border: 3px solid white;
     font-size: 40px;
     font-family: 'Old Standard TT', serif;
     transition: all 0.4s ease;
     &:hover, &:focus {
+        color: white;
         background-color:rgba(255,255,255,0.3);
         text-decoration: none;
     }
@@ -317,13 +319,18 @@ a.rsvp-button {
     .form-control:focus {
         border-color: #C1A785;
     }
-    
+
     input {
         outline: none;
         border: none !important;
         -webkit-box-shadow: none !important;
         -moz-box-shadow: none !important;
         box-shadow: none !important;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 20px;
     }
 
 }
