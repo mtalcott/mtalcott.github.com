@@ -1,12 +1,7 @@
 <div class="navbar">
     {% for page_data in site.data.pages %}
         <div class="navbar-item">
-            <a href="{{page_data.url}}" {% if page_data.file_path == page.url %}class="active"{% endif %}>
-            	<!--
-            	page_data.file_path: {{page_data.file_path}}
-            	page_data.url: {{page_data.url}}
-            	page.url: {{page.url}}
-            	-->
+            <a href="{{page_data.url}}" {% if page_data.url == page.url %}class="active"{% endif %}>
                 <div class="navbar-item-inner">
                    {{page_data.pretty_name}}
                 </div>
