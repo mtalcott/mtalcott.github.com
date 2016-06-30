@@ -18,9 +18,26 @@ layout: wedding
   	  <label>What's your email?</label>
   	  <input type="email" name="email" class="form-control" placeholder="Email">
   	</div>
-  	<div class="form-group">
+    <div class="form-group">
+      <label>Can you make it?</label>
+      <div class="radio">
+        <label>
+          <input type="radio" name="attending" value="yes" checked>
+          Wouldn't miss it for the world
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="attending" value="no">
+          Will celebrate from afar
+        </label>
+      </div>
+    </div>
+  	<div class="form-group hide-if-not-attending">
   	  <label>What song will get you up and dancin'?</label>
   	  <input type="text" name="song" class="form-control" placeholder="OMG fave song">
   	</div>
   	<button type="submit" class="btn btn-wedding btn-lg">Send RSVP</button>
 </form>
+
+<script src="/wedding/js/rsvp.js"></script>
